@@ -15,5 +15,11 @@
 	<meta name="description" content="evan's corner of the internet" />
 	<meta name="keywords" content="programming, coding, technology, blog, portfolio" />
 </svelte:head>
-<Nav />
-{@render children()}
+
+<header role="navigation">
+	<Nav />
+</header>
+
+<main>
+	{@render children()}
+</main>

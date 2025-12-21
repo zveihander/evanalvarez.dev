@@ -1,4 +1,4 @@
-<nav class="bg-gruvbox-bg pt-[1.5rem] pb-[2rem]">
+<nav class="bg-gruvbox-bg pt-[1.5rem] pb-[2rem]" aria-label="main navigation">
 	<div class="mx-auto max-w-screen px-6 md:px-[20rem]">
 		<div class="flex items-center justify-center md:justify-end">
 			<div class="text-md font-sans text-gruvbox-fg">
