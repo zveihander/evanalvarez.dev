@@ -1,49 +1,176 @@
 @import 'tailwindcss';
+@plugin "@tailwindcss/typography";
 
 @theme {
-  --color-gruvbox-bg: #282828;
-  --color-gruvbox-bg-hard: #1d2021;
-  --color-gruvbox-bg-soft: #32302f;
-  --color-gruvbox-bg0: #282828;
-  --color-gruvbox-bg1: #3c3836;
-  --color-gruvbox-bg2: #504945;
-  --color-gruvbox-bg3: #665c54;
-  --color-gruvbox-bg4: #7c6f64;
+	--color-gruvbox-bg: #282828;
+	--color-gruvbox-bg-hard: #1d2021;
+	--color-gruvbox-bg-soft: #32302f;
+	--color-gruvbox-bg0: #282828;
+	--color-gruvbox-bg1: #3c3836;
+	--color-gruvbox-bg2: #504945;
+	--color-gruvbox-bg3: #665c54;
+	--color-gruvbox-bg4: #7c6f64;
 
-  --color-gruvbox-fg: #ebdbb2;
-  --color-gruvbox-fg0: #fbf1c7;
-  --color-gruvbox-fg1: #ebdbb2;
-  --color-gruvbox-fg2: #d5c4a1;
-  --color-gruvbox-fg3: #bdae93;
-  --color-gruvbox-fg4: #a89984;
+	--color-gruvbox-fg: #ebdbb2;
+	--color-gruvbox-fg0: #fbf1c7;
+	--color-gruvbox-fg1: #ebdbb2;
+	--color-gruvbox-fg2: #d5c4a1;
+	--color-gruvbox-fg3: #bdae93;
+	--color-gruvbox-fg4: #a89984;
 
-  --color-gruvbox-red: #cc241d;
-  --color-gruvbox-red-bright: #fb4934;
+	--color-gruvbox-red: #cc241d;
+	--color-gruvbox-red-bright: #fb4934;
 
-  --color-gruvbox-green: #98971a;
-  --color-gruvbox-green-bright: #b8bb26;
+	--color-gruvbox-green: #98971a;
+	--color-gruvbox-green-bright: #b8bb26;
 
-  --color-gruvbox-yellow: #d79921;
-  --color-gruvbox-yellow-bright: #fabd2f;
+	--color-gruvbox-yellow: #d79921;
+	--color-gruvbox-yellow-bright: #fabd2f;
 
-  --color-gruvbox-blue: #458588;
-  --color-gruvbox-blue-bright: #83a598;
+	--color-gruvbox-blue: #458588;
+	--color-gruvbox-blue-bright: 2 #83a598;
 
-  --color-gruvbox-purple: #b16286;
-  --color-gruvbox-purple-bright: #d3869b;
+	--color-gruvbox-purple: #b16286;
+	--color-gruvbox-purple-bright: #d3869b;
 
-  --color-gruvbox-aqua: #689d6a;
-  --color-gruvbox-aqua-bright: #8ec07c;
+	--color-gruvbox-aqua: #689d6a;
+	--color-gruvbox-aqua-bright: #8ec07c;
 
-  --color-gruvbox-orange: #d65d0e;
-  --color-gruvbox-orange-bright: #fe8019;
+	--color-gruvbox-orange: #d65d0e;
+	--color-gruvbox-orange-bright: #fe8019;
 
-  --color-gruvbox-gray: #928374;
-  --color-gruvbox-gray-bright: #a89984;
+	--color-gruvbox-gray: #928374;
+	--color-gruvbox-gray-bright: #a89984;
+}
+
+@layer components {
+	.prose-gruvbox {
+		@apply text-gruvbox-fg font-sans text-base lg:text-lg;
+	}
+
+	/* Headings */
+	.prose-gruvbox h1 {
+		@apply font-serif font-bold text-3xl lg:text-5xl mb-4 text-gruvbox-fg;
+	}
+
+	.prose-gruvbox h2 {
+		@apply font-serif font-bold text-2xl lg:text-4xl mt-12 mb-4 text-gruvbox-fg;
+	}
+
+	.prose-gruvbox h3 {
+		@apply font-serif font-bold text-xl lg:text-3xl mt-8 mb-3 text-gruvbox-fg;
+	}
+
+	.prose-gruvbox h4 {
+		@apply font-serif font-bold text-lg lg:text-2xl mt-6 mb-2 text-gruvbox-fg;
+	}
+
+	/* Paragraphs and text */
+	.prose-gruvbox p {
+		@apply mb-4 leading-relaxed;
+	}
+
+	/* Links */
+	.prose-gruvbox a {
+		@apply text-gruvbox-green hover:underline;
+	}
+
+	/* Lists */
+	.prose-gruvbox ul,
+	.prose-gruvbox ol {
+		@apply ml-6 mb-4 space-y-2;
+	}
+
+	.prose-gruvbox ul {
+		@apply list-disc;
+	}
+
+	.prose-gruvbox ol {
+		@apply list-decimal;
+	}
+
+	.prose-gruvbox li {
+		@apply leading-relaxed;
+	}
+
+	/* Code blocks */
+	.prose-gruvbox pre {
+		@apply bg-gruvbox-bg-hard p-4 rounded overflow-x-auto mb-4 border border-gruvbox-gray;
+	}
+
+	.prose-gruvbox code {
+		@apply font-mono text-sm lg:text-base;
+	}
+
+	.prose-gruvbox :not(pre) > code {
+		@apply bg-gruvbox-bg-hard px-1.5 py-0.5 rounded text-gruvbox-orange;
+	}
+
+	/* Blockquotes */
+	.prose-gruvbox blockquote {
+		@apply border-l-4 border-gruvbox-green pl-4 italic my-4 opacity-90;
+	}
+
+	/* Horizontal rules */
+	.prose-gruvbox hr {
+		@apply border-gruvbox-gray my-8;
+	}
+
+	/* Tables */
+	.prose-gruvbox table {
+		@apply w-full border-collapse mb-4;
+	}
+
+	.prose-gruvbox th,
+	.prose-gruvbox td {
+		@apply border border-gruvbox-gray px-4 py-2 text-left;
+	}
+
+	.prose-gruvbox th {
+		@apply bg-gruvbox-bg-hard font-bold;
+	}
+
+	/* Images */
+	.prose-gruvbox img {
+		max-width: 100%;
+		height: auto;
+		margin: 2rem 0;
+		display: block;
+}
+
+	.prose-gruvbox img[alt*='small'] {
+		max-width: 400px;
+	}
+
+	.prose-gruvbox img[alt*='medium'] {
+		max-width: 600px;
+	}
+
+	.prose-gruvbox img[alt*='large'] {
+		max-width: 800px;
+	}
+
+	/* Strong/bold */
+	.prose-gruvbox strong {
+		@apply font-bold text-gruvbox-fg;
+	}
+
+	/* Emphasis/italic */
+	.prose-gruvbox em {
+		@apply italic;
+	}
+}
+
+html,
+body {
+	background-color: #282828;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    font-family: 'IBM Plex Sans Variable', sans-serif;
-    font-family: 'Petrona Variable', serif;
-    font-family: 'IBM Plex Mono', monospace;
+	font-display: swap;
+	font-family: 'IBM Plex Sans Variable', sans-serif;
+	font-family: 'Petrona Variable', serif;
+	font-family: 'IBM Plex Mono', monospace;
 }
