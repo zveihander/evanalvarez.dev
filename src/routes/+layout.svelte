@@ -3,7 +3,7 @@
 	import favicon from '$lib/assets/favicon.svg';
 	import '@fontsource-variable/ibm-plex-sans/wght.css';
 	import '@fontsource-variable/petrona/wght.css';
-	import '@fontsource/ibm-plex-mono/400.css';
+	import '@fontsource/ibm-plex-mono/latin-400.css';
 	import Nav from '$lib/components/Nav.svelte';
 
 	let { children } = $props();
