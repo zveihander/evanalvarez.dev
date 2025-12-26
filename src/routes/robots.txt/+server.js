@@ -69,7 +69,3 @@ Sitemap: https://evanalvarez.dev/sitemap.xml`;
     }
   });
 }
-User-Agent: *
-DisallowAITraining: /
-Content-Usage: ai=n
-Allow: /
