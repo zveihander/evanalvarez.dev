@@ -50,7 +50,8 @@ const config = {
 			directives: {
 				'default-src': ['self'],
 				'style-src': ['self', 'unsafe-inline'],
-				'font-src': ['self', 'data:'],
+			    'font-src': ['self', 'data:'],
+                'img-src': ['self', 'data:'],
 			},
 		},
         inlineStyleThreshold: 51200,
