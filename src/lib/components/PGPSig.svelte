@@ -1,7 +1,9 @@
 <script>
 	let { slug, publicKeyUrl = '/gpg/pubkey.asc' } = $props();
 
-	const signatureUrl = `https://git.evanalvarez.dev/evanalvarez.dev/plain/src/routes/writings/posts/${slug}/signature.asc`;
+	const signatureUrl = $derived(
+		`https://git.evanalvarez.dev/evanalvarez.dev/plain/src/routes/writings/posts/${slug}/signature.asc`
+	);
 	const markdownUrl = $derived(
 		`https://git.evanalvarez.dev/evanalvarez.dev/plain/src/routes/writings/posts/${slug}/+page.md`
 	);
