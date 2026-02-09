@@ -7,17 +7,19 @@
 		<div class="flex items-center justify-start">
 			<div class="pt-[5rem] font-sans text-sm text-gruvbox-fg lg:text-lg">
 				<h1 class="font-serif text-3xl font-bold lg:text-5xl">projects</h1>
-				<a href="/" class="text-gruvbox-green hover:underline lg:text-[15px]">home</a>
-				::
-				<a
-					href="https://git.evanalvarez.dev"
-					class="text-gruvbox-green hover:underline lg:text-[15px]">cgit</a
-				>
-				::
-				<a
-					href="https://github.com/zveihander"
-					class="text-gruvbox-green hover:underline lg:text-[15px]">github</a
-				>
+				<nav class="mt-2 flex items-center gap-2">
+					<a href="/" class="text-gruvbox-green hover:underline lg:text-[15px]">home</a>
+					::
+					<a
+						href="https://git.evanalvarez.dev"
+						class="text-gruvbox-green hover:underline lg:text-[15px]">cgit</a
+					>
+					::
+					<a
+						href="https://github.com/zveihander"
+						class="text-gruvbox-green hover:underline lg:text-[15px]">github</a
+					>
+				</nav>
 			</div>
 		</div>
 		<div class="text-md pt-6 font-sans text-gruvbox-fg">

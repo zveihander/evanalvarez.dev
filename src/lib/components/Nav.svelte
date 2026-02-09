@@ -8,6 +8,8 @@
 				<a href="/writings" class="text-gruvbox-green hover:underline">writings</a>
 				<span class="inline">::</span>
 				<a href="/projects" class="text-gruvbox-green hover:underline">projects</a>
+				<span class="inline">::</span>
+				<a href="/library" class="text-gruvbox-green hover:underline">library</a>
 				<span class="inline"> ]</span>
 			</div>
 		</div>

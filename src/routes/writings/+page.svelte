@@ -7,9 +7,11 @@
 		<div class="flex items-center justify-start">
 			<div class="pt-[5rem] font-sans text-sm text-gruvbox-fg lg:text-lg">
 				<h1 class="font-serif text-3xl font-bold lg:text-5xl">writings</h1>
-				<a href="/" class="text-gruvbox-green hover:underline lg:text-[15px]">home</a>
-				::
-				<a href="/rss.xml" class="text-gruvbox-green hover:underline lg:text-[15px]">subscribe</a>
+				<nav class="mt-2 flex items-center gap-2">
+					<a href="/" class="text-gruvbox-green hover:underline lg:text-[15px]">home</a>
+					::
+					<a href="/rss.xml" class="text-gruvbox-green hover:underline lg:text-[15px]">subscribe</a>
+				</nav>
 			</div>
 		</div>
 

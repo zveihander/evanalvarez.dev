@@ -1,24 +1,29 @@
 <div class="min-h-screen bg-gruvbox-bg">
 	<div class="mx-auto max-w-screen-xl px-6">
 		<div class="flex items-center justify-start">
-			<div class="pt-[5rem] font-sans text-sm text-gruvbox-fg lg:text-lg">
+			<div class="mt-2 pt-[5rem] font-sans text-sm text-gruvbox-fg lg:text-lg">
 				<h1 class="font-serif text-3xl font-bold lg:text-5xl">evan alvarez</h1>
-				<a
-					href="mailto:evanalvarez@tutamail.com"
-					class="text-gruvbox-green hover:underline lg:text-[15px]">email</a
-				>
-				::
-				<a href="/gpg/pubkey.asc" class="text-gruvbox-green hover:underline lg:text-[15px]">pgp</a>
-				::
-				<a
-					href="https://git.evanalvarez.dev"
-					class="text-gruvbox-green hover:underline lg:text-[15px]">cgit</a
-				>
-				::
-				<a
-					href="https://github.com/zveihander"
-					class="text-gruvbox-green hover:underline lg:text-[15px]">github</a
-				>
+				<nav class="mt-2 flex items-center gap-2">
+					<a
+						href="mailto:evanalvarez@tutamail.com"
+						class="text-gruvbox-green hover:underline lg:text-[15px]">email</a
+					>
+					::
+					<a href="/gpg/pubkey.asc" class="text-gruvbox-green hover:underline lg:text-[15px]">pgp</a
+					>
+					::
+					<a
+						href="https://git.evanalvarez.dev"
+						class="text-gruvbox-green hover:underline lg:text-[15px]">cgit</a
+					>
+					::
+					<a
+						href="https://github.com/zveihander"
+						class="text-gruvbox-green hover:underline lg:text-[15px]">github</a
+					>
+					::
+					<a href="/library" class="text-gruvbox-green hover:underline lg:text-[15px]">library</a>
+				</nav>
 			</div>
 		</div>
 		<div class="text-md pt-6 font-sans text-gruvbox-fg">Programming can be fun sometimes.</div>
