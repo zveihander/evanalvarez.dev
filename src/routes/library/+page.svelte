@@ -686,7 +686,7 @@
 	];
 </script>
 
-<div class="min-h-screen bg-gruvbox-bg selection:bg-gruvbox-fg selection:text-gruvbox-bg">
+<div class="min-h-screen bg-gruvbox-bg">
 	<div class="mx-auto max-w-screen-xl px-6 pb-20">
 		<div class="flex items-center justify-start">
 			<div class="pt-[5rem] text-sm text-gruvbox-fg lg:text-lg">
