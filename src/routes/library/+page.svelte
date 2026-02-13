@@ -716,25 +716,25 @@
 			<div class="space-y-12">
 				{#each library as category}
 					<section>
-						<h2 class="text-2xl font-bold">
-							# {category.name}
+						<h2 class="text-gruvbox-yellow text-2xl font-bold">
+							◉ {category.name}
 						</h2>
 
 						<div class="mt-4 space-y-8 pl-4">
 							{#each category.subcategories as sub}
 								<div class="space-y-4">
 									<h3 class="text-xl font-bold text-gruvbox-green">
-										## {sub.name}
+										○ {sub.name}
 									</h3>
 
 									<div class="space-y-6 pl-4">
 										{#each sub.topics as topic}
 											<div class="space-y-3">
 												<h4 class="text-gruvbox-blue text-lg font-bold">
-													### {topic.name}
+													✸ {topic.name}
 												</h4>
 
-												<ul class="border-gruvbox-bg-soft space-y-2 border-l pl-6">
+												<ul class="space-y-2 border-l border-gruvbox-gray pl-6">
 													{#each topic.books as book}
 														<li class="group flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
 															<span
@@ -762,36 +762,13 @@
 </div>
 
 <style>
-	:global(.bg-gruvbox-bg) {
-		background-color: #282828;
-	}
-	:global(.text-gruvbox-fg) {
-		color: #ebdbb2;
-	}
-	:global(.text-gruvbox-fg-soft) {
-		color: #bdae93;
-	}
-	:global(.text-gruvbox-bg-soft) {
-		color: #504945;
-	}
-	:global(.border-gruvbox-bg-soft) {
-		border-color: #504945;
-	}
-
 	.text-gruvbox-yellow {
-		color: #fabd2f;
-	}
-	.text-gruvbox-green {
-		color: #b8bb26;
+		color: #d79921;
 	}
 	.text-gruvbox-blue {
 		color: #83a598;
 	}
 	.text-gruvbox-aqua {
 		color: #8ec07c;
-	}
-
-	:global(html) {
-		scrollbar-color: #504945 #282828;
 	}
 </style>

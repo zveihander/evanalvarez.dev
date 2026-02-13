@@ -22,7 +22,7 @@
 
 	<meta
 		http-equiv="Content-Security-Policy"
-		content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self' data:; connect-src 'self'; img-src 'self' https: data:; object-src 'none'; base-uri 'self'"
+		content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self' data:; connect-src 'self'; img-src 'self' https: data:; object-src 'none'; base-uri 'self'"
 	/>
 	<meta http-equiv="Referrer-Policy" content="no-referrer-when-downgrade" />
 </svelte:head>
