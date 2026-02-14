@@ -768,7 +768,4 @@
 	.text-gruvbox-blue {
 		color: #83a598;
 	}
-	.text-gruvbox-aqua {
-		color: #8ec07c;
-	}
 </style>
