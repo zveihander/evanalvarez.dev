@@ -12,7 +12,7 @@
 			name: 'abaddon',
 			language: 'rust',
 			url: 'https://git.evanalvarez.dev/abaddon',
-			description: 'secure file shredder for UNIX systems',
+			description: 'minimal, secure, and multithreaded file shredder for UNIX systems',
 			openSource: true,
 			openSourceLink: 'https://git.evanalvarez.dev/abaddon'
 		}
