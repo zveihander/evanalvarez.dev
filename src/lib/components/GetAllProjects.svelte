@@ -3,15 +3,23 @@
 		{
 			name: 'rstatus',
 			language: 'rust',
-			url: 'https://git.evanalvarez.dev/rstatus',
+			url: 'https://git.evanalvarez.dev/rstatus/about',
 			description: 'minimal, hackable status bar for i3/sway',
 			openSource: true,
 			openSourceLink: 'https://git.evanalvarez.dev/rstatus'
 		},
 		{
+			name: 'relic',
+			language: 'rust',
+			url: 'https://git.evanalvarez.dev/relic/about',
+			description: 'Hyper-minimal slstatus-like program following the suckless philosophy',
+			openSource: true,
+			openSourceLink: 'https://git.evanalvarez.dev/relic'
+		},
+		{
 			name: 'abaddon',
 			language: 'rust',
-			url: 'https://git.evanalvarez.dev/abaddon',
+			url: 'https://git.evanalvarez.dev/abaddon/about',
 			description: 'minimal, secure, and multithreaded file shredder for UNIX systems',
 			openSource: true,
 			openSourceLink: 'https://git.evanalvarez.dev/abaddon'
